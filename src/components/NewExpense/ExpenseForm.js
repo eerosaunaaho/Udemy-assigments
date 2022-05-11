@@ -95,14 +95,10 @@ const ExpenseForm = (props) => {
       </div>
       <div className="new-expense__actions">
         {!formState && (
-          <form onSubmit={submitHandler2}>
-            <button type="submit">Add New Expense</button>
-          </form>
+            <button onClick={submitHandler2}>Add New Expense</button>
         )}
         {formState && (
-          <form onSubmit={submitHandler2}>
-            <button type="submit">Cancel</button>
-          </form>
+            <button onClick={submitHandler2}>Cancel</button>
         )}
       </div>
     </div>
